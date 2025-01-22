@@ -1,0 +1,21 @@
+.page-layout {
+    &--ahorro-page {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        .page-layout__main {
+            flex-grow: 1;
+        }
+    }
+}
+
+@media screen and (min-height: 900px) {
+    .page-layout {
+        &--service-page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    }
+}

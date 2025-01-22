@@ -1,0 +1,31 @@
+@import './_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link {
+    &::after {
+        transition: all 0.2s linear;
+        content: '';
+        height: 2px;
+        display: block;
+        width: 0;
+        margin: auto;
+        background-color: #fff;
+        transform: translateY(5px);
+    }
+
+    &:hover {
+        &::after {
+            width: 80%;
+        }
+    }
+}
+
+.gatsby-image-wrapper-constrained * {
+    background-color: transparent !important;
+}

@@ -1,0 +1,12 @@
+.media-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    position: relative;
+
+    img {
+        width: 35px;
+    }
+}

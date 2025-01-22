@@ -1,0 +1,31 @@
+.carrousel {
+    margin-top: 40px;
+    width: 100% !important;
+    &__text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__slide {
+        height: 600px !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    &__image {
+        height: 100% !important;
+        border-radius: 20px;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--color-green) !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .carrousel {
+        width: 60% !important;
+    }
+}

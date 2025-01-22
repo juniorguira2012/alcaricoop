@@ -1,0 +1,87 @@
+.loans {
+    font-family: 'Noto Sans', sans-serif;
+    width: 90%;
+    margin: auto;
+
+    &__title {
+        margin: 30px 0 40px 0;
+        text-align: center;
+
+        &::after {
+            content: '';
+            background-color: var(--color-yellow);
+            height: 2px;
+            width: 40%;
+            transform: translateY(10px);
+            margin: auto;
+            display: block;
+        }
+    }
+
+    &__ul {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card-home {
+        &:hover {
+            transform: translateY(-15px) !important;
+        }
+    }
+
+    .card-home__title {
+        font-size: 20px !important;
+        height: 110px !important;
+        gap: 4px;
+    }
+
+    .card-home__icon {
+        transform: translateY(-5px);
+    }
+
+    .card-home__description {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .loans {
+        .card-home__description {
+            font-size: 18px !important;
+            margin-top: -35px;
+        }
+
+        &__title {
+            margin: 50px 0 60px 0;
+
+            &::after {
+                transform: translateY(20px);
+            }
+        }
+
+        &__ul {
+            gap: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .loans {
+        &__title {
+            margin: 70px 0 90px 0;
+            font-size: 50px;
+
+            &::after {
+                width: 20%;
+                transform: translateY(30px);
+            }
+        }
+
+        &__ul {
+            width: 85%;
+            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

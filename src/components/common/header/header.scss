@@ -1,0 +1,157 @@
+.header {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    padding: 7px 20px;
+    gap: 20px;
+    background-color: var(--color-green);
+    box-shadow: 5px 3px 7px 0px var(--color-green);
+    z-index: 200;
+
+    &__media-socials {
+        display: none !important;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+
+    &__banner {
+        width: 165px;
+        left: -60px;
+        top: -80px;
+        height: 155px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 3px 1px 13px rgba(149, 149, 149, 0.8);
+        backdrop-filter: blur(20px);
+        position: absolute;
+        z-index: 100;
+    }
+
+    &__link-logo {
+        z-index: 200;
+    }
+
+    &__logo {
+        width: 60px;
+        transform: translateX(-10px);
+        cursor: pointer;
+    }
+
+    &__img-social {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    &__ul {
+        display: none;
+        gap: 20px;
+    }
+
+    &__li {
+        list-style: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+    }
+
+    &__link {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative;
+
+        &:hover {
+            .sub-menu {
+                visibility: visible;
+            }
+
+            .sub-menu__content {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 1300px) {
+            font-size: 20px;
+        }
+    }
+
+    &__btn-menu {
+        cursor: pointer;
+        transition: all 0.2s linear;
+        padding: 5px;
+
+        &:hover {
+            background-color: var(--color-green-hover);
+            border-radius: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .header {
+        position: relative;
+
+        &__ul {
+            display: flex;
+            align-self: flex-end;
+        }
+
+        &__nav {
+            justify-content: flex-start;
+            gap: 50px;
+        }
+
+        &__btn-menu {
+            display: none;
+        }
+
+        &__logo {
+            width: 110px;
+        }
+
+        &__banner {
+            width: 220px;
+            height: 210px;
+        }
+
+        &__media-socials {
+            display: flex !important;
+            position: absolute !important;
+            right: 20px;
+            top: 0;
+            margin-top: 10px !important;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        &__media-socials {
+            display: flex !important;
+            align-self: flex-start;
+            gap: 30px !important;
+            transform: translateY(-12px);
+            margin-top: 20px !important;
+
+            a {
+                transition: all 0.2s linear;
+            }
+
+            a:hover {
+                transform: translateY(15px);
+            }
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+}
