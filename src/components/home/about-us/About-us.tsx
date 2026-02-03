@@ -12,7 +12,7 @@ const AboutUs = () => {
                         ¿Qué es <span className="about-us__title-span">Alcarricoop?</span>
                     </h1>
                     <p data-aos="fade-up-left" className="about-us__description">
-                        Alcarricop es una cooperativa de ahorro, crédito y servicios múltiples, con la idea de
+                        Alcarricoop es una cooperativa de ahorro, crédito y servicios múltiples, con la idea de
                         aportar al sistema cooperativo y a nuestros socios la ayuda de obtener los bienes y
                         servicios a un precio justo con igualdad y condición.
                     </p>
