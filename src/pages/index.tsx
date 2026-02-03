@@ -17,8 +17,8 @@ const Home = () => {
 
 export const Head = () => (
     <SEO
-        title="Cooporativa Alcarricop"
-        description="Alcarricop es una cooperativa de ahorro, crédito y servicios múltiples, con la idea de
+        title="Cooporativa Alcarricoop"
+        description="Alcarricoop es una cooperativa de ahorro, crédito y servicios múltiples, con la idea de
                         aportar al sistema cooperativo y a nuestros socios la ayuda de obtener los bienes y
                         servicios a un precio justo con igualdad y condición."
     />
