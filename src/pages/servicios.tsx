@@ -60,7 +60,7 @@ const Servicios = () => {
 
 export const Head = () => (
     <SEO
-        title="Servicios - Alcarricop"
+        title="Servicios - Alcarricoop"
         pathname="servicios"
         description="Alcarricoop te ofrece los mejores servicios con la mejor taza del mercado y financiamientos de hasta un"
     />
