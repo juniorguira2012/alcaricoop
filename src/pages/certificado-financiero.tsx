@@ -31,7 +31,7 @@ const FinancialCertificate = () => {
 
 export const Head = () => (
     <SEO
-        title="Certificado financiero - Alcarricop"
+        title="Certificado financiero - Alcarricoop"
         pathname="certificado-financiero"
         description=" Nuestros certificados te garantizan una mayor rentabilidad en tu inversion, con una
                         atractiva taza de interés."
